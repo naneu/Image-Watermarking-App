@@ -35,7 +35,7 @@ class App:
             f_types = [('Image File', '*.*'), 
             ('Text Document', '*.txt'),
             ('CSV files',"*.csv")]
-            self.path=filedialog.askopenfilename(title='Upload a file', initialdir='/kamotonyi', filetypes=f_types)
+            self.path=filedialog.askopenfilename(title='Upload a file', initialdir='/', filetypes=f_types)
             self.filename= os.path.basename(self.path)
 
             self.img= Image.open(self.path)
